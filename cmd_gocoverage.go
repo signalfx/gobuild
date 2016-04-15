@@ -10,8 +10,8 @@ import (
 
 	"bufio"
 
-	"github.com/cep21/gobuild/internal/golang.org/x/net/context"
-	"github.com/cep21/gobuild/internal/golang.org/x/tools/cover"
+	"github.com/signalfx/gobuild/internal/golang.org/x/net/context"
+	"github.com/signalfx/gobuild/internal/golang.org/x/tools/cover"
 )
 
 type goCoverageCheck struct {

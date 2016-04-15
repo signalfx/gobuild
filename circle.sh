@@ -9,7 +9,7 @@ export GO15VENDOREXPERIMENT="1"
 export GOROOT="$HOME/go_circle"
 export GOPATH="$HOME/.go_circle"
 export PATH="$GOROOT/bin:$GOPATH/bin:$GOPATH_INTO:$PATH"
-export IMPORT_PATH="github.com/cep21/gobuild"
+export IMPORT_PATH="github.com/signalfx/gobuild"
 export CIRCLE_ARTIFACTS="${CIRCLE_ARTIFACTS-/tmp}"
 
 function do_cache() {
@@ -22,12 +22,12 @@ function do_cache() {
   )
   . "$HOME/circleutil/scripts/common.sh"
   . "$HOME/circleutil/scripts/install_all_go_versions.sh"
-  GOPATH_INTO=$GOPATH_INTO . "$HOME/circleutil/scripts/versioned_goget.sh" "github.com/cep21/gobuild:v1.0"
+  GOPATH_INTO=$GOPATH_INTO . "$HOME/circleutil/scripts/versioned_goget.sh" "github.com/signalfx/gobuild:v1.0"
 }
 
 function do_test() {
   . "$HOME/circleutil/scripts/common.sh"
-  SRC_PATH="$GOPATH/src/github.com/cep21/gobuild"
+  SRC_PATH="$GOPATH/src/github.com/signalfx/gobuild"
   copy_local_to_path "$SRC_PATH"
   (
     cd "$SRC_PATH"
