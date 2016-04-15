@@ -14,7 +14,7 @@ import (
 
 	"os/exec"
 
-	"github.com/cep21/gobuild/internal/golang.org/x/net/context"
+	"github.com/signalfx/gobuild/internal/golang.org/x/net/context"
 )
 
 type gobuildMain struct {

@@ -1,4 +1,4 @@
-# gobuild [![Circle CI](https://circleci.com/gh/cep21/gobuild.svg?style=svg)](https://circleci.com/gh/cep21/gobuild)
+# gobuild [![Circle CI](https://circleci.com/gh/signalfx/gobuild.svg?style=svg)](https://circleci.com/gh/signalfx/gobuild)
 
 Code lint and build tool for go code on build servers and developer machines.
 
